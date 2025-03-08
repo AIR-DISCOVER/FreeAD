@@ -26,7 +26,7 @@ https://github.com/hustvl/VAD/assets/45144254/153b9bf0-5159-46b5-9fab-573baf5c61
 * **`14 July, 2023`:** VAD is accepted by ICCV 2023🎉! Code and models will be open source soon!
 * **`21 Mar, 2023`:** We release the VAD paper on [arXiv](https://arxiv.org/abs/2303.12077). Code/Models are coming soon. Please stay tuned! ☕️ -->
 
-## Introduction
+<!-- ## Introduction
 > VAD is a vectorized paradigm for end-to-end autonomous driving.
 
 <div align="center">
@@ -102,4 +102,4 @@ If you find VAD useful in your research or applications, please consider giving 
 All code in this repository is under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
 ## Acknowledgement
-VAD is based on the following projects: [mmdet3d](https://github.com/open-mmlab/mmdetection3d), [detr3d](https://github.com/WangYueFt/detr3d), [BEVFormer](https://github.com/fundamentalvision/BEVFormer) and [MapTR](https://github.com/hustvl/MapTR). Many thanks for their excellent contributions to the community.
+VAD is based on the following projects: [mmdet3d](https://github.com/open-mmlab/mmdetection3d), [detr3d](https://github.com/WangYueFt/detr3d), [BEVFormer](https://github.com/fundamentalvision/BEVFormer) and [MapTR](https://github.com/hustvl/MapTR). Many thanks for their excellent contributions to the community. -->
