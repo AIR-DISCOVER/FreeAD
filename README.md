@@ -121,7 +121,9 @@ The FT-VAD(FT_VAD_s1e6_s2e3.pth) model was trained for 6 epochs in stage 1 and 3
 The FT-VAD model is available on https://huggingface.co/datasets/doraemon6666/FreeWorld/tree/main
 
 ## Results
+
 - Open-loop planning results on [FreeWorld](https://huggingface.co/datasets/doraemon6666/FreeWorld/tree/main).
+
 | Method   | L2 (m) 1s | L2 (m) 2s | L2 (m) 3s | Avg. | AP divider | FPS | Collision (Avg. %) |
 | :-------: | :---------: | :---------: | :---------: | :---: | :------------: | :---: | :------------------: |
 | VAD-Tiny   | 0.891       | 1.600       | 2.449       | 1.647 | 0.000           | **8.7** | 0.00 |
@@ -129,11 +131,13 @@ The FT-VAD model is available on https://huggingface.co/datasets/doraemon6666/Fr
 | **FT-VAD** | **0.421**   | **0.595**   | **0.753**   | **0.589** | **0.480** | 5.0     | 0.00 |
 
 - Open-loop planning results on [nuScenes](https://github.com/nutonomy/nuscenes-devkit).
+
 | Method   | L2 (m) 1s | L2 (m) 2s | L2 (m) 3s | Col. (%) 1s | Col. (%) 2s | Col. (%) 3s | FPS |
 | :-------: | :---------: | :---------: | :---------: | :-----------: | :-----------: | :-----------: | :---: |
 | VAD-Tiny   | 0.46        | 0.76        | 1.12        | 0.21            | 0.35            | 0.58            | **16.8** |
 | VAD-Base   | **0.41**    | **0.70**    | **1.05**    | 0.07            | 0.17            | 0.41            | 4.5 |
 | **FT-VAD** | 3.93        | 6.54        | 9.16        | **0.004**       | **0.017**       | **0.031**       | 5.0 |
+
 
 ## Getting Started
 - [Installation](docs/install.md)
