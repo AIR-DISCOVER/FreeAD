@@ -103,3 +103,46 @@ All code in this repository is under the [Apache License 2.0](https://www.apache
 
 ## Acknowledgement
 VAD is based on the following projects: [mmdet3d](https://github.com/open-mmlab/mmdetection3d), [detr3d](https://github.com/WangYueFt/detr3d), [BEVFormer](https://github.com/fundamentalvision/BEVFormer) and [MapTR](https://github.com/hustvl/MapTR). Many thanks for their excellent contributions to the community. -->
+
+## Introduction
+FreeAD is an end-to-end (E2E) robot navigation system designed to operate in unstructured environments such as auxiliary roads, campus paths, and indoor settings. Unlike traditional E2E autonomous driving models that focus on structured roads, FreeAD aims to improve navigation capabilities in these challenging scenarios.
+
+This project introduces the FreeWorld Dataset, a comprehensive dataset combining real-world robot data and synthetic data generated using the Isaac Sim simulator. This dataset is tailored for training and evaluating E2E autonomous driving models in unstructured environments.
+
+To validate the dataset's effectiveness, we fine-tuned the efficient E2E driving model VAD using FreeWorld. Our results demonstrate that this fine-tuning significantly enhances navigation performance in unstructured environments.
+
+This repository provides the first dataset specifically for E2E robot navigation in unstructured scenarios and offers a benchmark for vision-based E2E navigation technology, supporting the development of logistics and service robots.
+
+## DataSet
+The FreeWorld DataSet is available under (https://huggingface.co/datasets/doraemon6666/FreeWorld/tree/main)
+
+## Model
+The FT-VAD(FT_VAD_s1e6_s2e3.pth) model was trained for 6 epochs in stage 1 and 3 epochs in stage 2, based on the pre-trained model VAD-Base(https://drive.google.com/file/d/1FLX-4LVm4z-RskghFbxGuYlcYOQmV5bS/view?usp=sharing)
+The FT-VAD model is available on https://huggingface.co/datasets/doraemon6666/FreeWorld/tree/main
+
+## Results
+- Open-loop planning results on [FreeWorld](https://huggingface.co/datasets/doraemon6666/FreeWorld/tree/main).
+| Method    | L2 (m) 1s | L2 (m) 2s | L2 (m) 3s | Avg. | AP divider | FPS | Collision (Avg. %) |
+|:-----------|:-----------|:-----------|:-----------|:-----|:------------|:----|:-------------------|
+| VAD-Tiny   | 0.891      | 1.600      | 2.449      | 1.647 | 0.000        | **8.7** | 0.00 |
+| VAD-Base   | 0.499      | 0.759      | 1.040      | 0.766 | 0.001        | 5.0     | 0.00 |
+| FT-VAD     | **0.421**  | **0.595**  | **0.753**  | **0.589** | **0.480** | 5.0     | 0.00 |
+
+- Open-loop planning results on [nuScenes](https://github.com/nutonomy/nuscenes-devkit).
+| Method  | L2 (m) 1s | L2 (m) 2s | L2 (m) 3s | Col. (%) 1s | Col. (%) 2s | Col. (%) 3s |
+|:--------|:-----------|:-----------|:-----------|:------------|:------------|:------------|
+| VAD-Tiny | 0.46       | 0.76       | 1.12       | 0.21         | 0.35         | 0.58         |
+| VAD-Base | **0.41**   | **0.70**   | **1.05**   | 0.07         | 0.17         | 0.41         |
+| FT-VAD   | 3.93       | 6.54       | 9.16       | **0.004**    | **0.017**    | **0.031**    |
+
+## Getting Started
+- [Installation](docs/install.md)
+- [Prepare Dataset](docs/prepare_dataset.md)
+- [Train and Eval](docs/train_eval.md)
+- [Visualization](docs/visualization.md)
+
+## Contact
+If you have any questions or suggestions about this repo, please feel free to contact us (yuhangpeng65@gmail.com).
+
+## License
+All code in this repository is under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
