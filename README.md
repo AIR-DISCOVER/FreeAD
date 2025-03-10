@@ -113,12 +113,13 @@ To validate the dataset's effectiveness, we fine-tuned the efficient E2E driving
 
 This repository provides the first dataset specifically for E2E robot navigation in unstructured scenarios and offers a benchmark for vision-based E2E navigation technology, supporting the development of logistics and service robots.
 
-## DataSet
-The FreeWorld DataSet is available under (https://huggingface.co/datasets/doraemon6666/FreeWorld/tree/main)
+## Dataset
+The [FreeWorld Dataset](https://huggingface.co/datasets/doraemon6666/FreeWorld/tree/main) is available for access.
 
 ## Model
-The FT-VAD(FT_VAD_s1e6_s2e3.pth) model was trained for 6 epochs in stage 1 and 3 epochs in stage 2, based on the pre-trained model VAD-Base(https://drive.google.com/file/d/1FLX-4LVm4z-RskghFbxGuYlcYOQmV5bS/view?usp=sharing)
-The FT-VAD model is available on https://huggingface.co/datasets/doraemon6666/FreeWorld/tree/main
+The **FT-VAD** model (`FT_VAD_s1e6_s2e3.pth`) was trained for **6 epochs** in stage 1 and **3 epochs** in stage 2, based on the pre-trained [VAD-Base model](https://drive.google.com/file/d/1FLX-4LVm4z-RskghFbxGuYlcYOQmV5bS/view?usp=sharing).  
+The **FT-VAD** model is available on [Hugging Face](https://huggingface.co/datasets/doraemon6666/FreeWorld/tree/main).
+
 
 ## Results
 
