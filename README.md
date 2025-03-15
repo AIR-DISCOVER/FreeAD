@@ -124,10 +124,11 @@ The **FT-VAD** model is available on [Hugging Face](https://huggingface.co/datas
 
 ## Results
 
-- Open-loop planning results on [FreeWorld](https://huggingface.co/datasets/doraemon6666/FreeWorld/tree/main).
-## Open-loop Results on FreeWorld
+### Open-loop Results on FreeWorld
 Open-loop Results on FreeWorld: Comparison of VAD-Tiny, VAD-Base, and FT-VAD under the "Divider Only" map modeling strategy. ADE and FDE represent pedestrian motion prediction errors.
 **ADE** and **FDE** represent pedestrian motion prediction errors.  
+
+- Open-loop planning results on [FreeWorld](https://huggingface.co/datasets/doraemon6666/FreeWorld/tree/main).
 
 | **Method**  | **L2 (m) 1s ↓** | **L2 (m) 2s ↓** | **L2 (m) 3s ↓** | **Avg. ↓** | **AP divider ↑** | **FPS ↑** | **Collision (Avg. %) ↓** | **ADE ↓** | **FDE ↓** |
 |:------------|:----------------:|:----------------:|:----------------:|:------------:|:------------------:|:-----------:|:---------------------------:|:------------:|:------------:|
@@ -137,13 +138,14 @@ Open-loop Results on FreeWorld: Comparison of VAD-Tiny, VAD-Base, and FT-VAD und
 
 > **Note:** AP divider is computed with a threshold of 1.5.
 
-- Open-loop planning results on [nuScenes](https://github.com/nutonomy/nuscenes-devkit).
+### Open-loop Results on nuScenes
+- Open-loop Planning Results on [nuScenes](https://github.com/nutonomy/nuscenes-devkit)
 
-| Method   | L2 (m) 1s | L2 (m) 2s | L2 (m) 3s | Col. (%) 1s | Col. (%) 2s | Col. (%) 3s | FPS |
-| :-------: | :---------: | :---------: | :---------: | :-----------: | :-----------: | :-----------: | :---: |
-| VAD-Tiny   | 0.46        | 0.76        | 1.12        | 0.21            | 0.35            | 0.58            | **16.8** |
-| VAD-Base   | **0.41**    | **0.70**    | **1.05**    | 0.07            | 0.17            | 0.41            | 4.5 |
-| **FT-VAD** | 3.93        | 6.54        | 9.16        | **0.004**       | **0.017**       | **0.031**       | 5.0 |
+| **Method**  | **L2 (m) 1s ↓** | **L2 (m) 2s ↓** | **L2 (m) 3s ↓** | **Col. (%) 1s ↓** | **Col. (%) 2s ↓** | **Col. (%) 3s ↓** | **FPS ↑** |
+|:------------|:----------------:|:----------------:|:----------------:|:--------------------:|:--------------------:|:--------------------:|:------------:|
+| VAD-Tiny     | 0.46             | 0.76             | 1.12             | 0.21                 | 0.35                 | 0.58                 | **16.8**     |
+| VAD-Base     | **0.41**         | **0.70**         | **1.05**         | 0.07                 | 0.17                 | 0.41                 | 4.5           |
+| **FT-VAD**   | 2.02             | 3.24             | 4.38             | **0.00**             | **0.00019**          | **0.00016**          | 5.0           |
 
 
 ## Getting Started
