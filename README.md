@@ -13,7 +13,7 @@ The [FreeWorld Dataset](https://huggingface.co/datasets/doraemon6666/FreeWorld) 
 
 ## Model
 The **FT-VAD** model (`FT_VAD_s1e6_s2e3.pth`) was trained for **6 epochs** in stage 1 and **3 epochs** in stage 2, based on the pre-trained [VAD-Base model](https://drive.google.com/file/d/1FLX-4LVm4z-RskghFbxGuYlcYOQmV5bS/view?usp=sharing).  
-The **FT-VAD** model is available on [Hugging Face](https://huggingface.co/datasets/doraemon6666/FreeAD).
+The **FT-VAD** model is available on [Hugging Face](https://huggingface.co/doraemon6666/FreeAD).
 
 
 ## Results
