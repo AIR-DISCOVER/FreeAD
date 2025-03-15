@@ -126,11 +126,11 @@ The **FT-VAD** model is available on [Hugging Face](https://huggingface.co/datas
 
 - Open-loop planning results on [FreeWorld](https://huggingface.co/datasets/doraemon6666/FreeWorld/tree/main).
 
-| Method   | L2 (m) 1s | L2 (m) 2s | L2 (m) 3s | Avg. | AP divider | FPS | Collision (Avg. %) | ADE ↓ | FDE ↓ |
-| :-------: | :---------: | :---------: | :---------: | :---: | :------------: | :---: | :------------------: | :---: | :---: |
-| VAD-Tiny   | 0.46        | 0.76        | 1.12        | -    | -              | -     | 0.38                 | 2.848 | 3.294 |
-| VAD-Base   | **0.41**    | **0.70**    | **1.05**    | -    | -              | -     | 0.22                 | 2.089 | 2.917 |
-| **FT-VAD** | 2.02        | 3.24        | 4.38        | -    | -              | -     | **0.00018**          | **1.432** | **2.319** |
+| Method   | L2 (m) 1s ↓ | L2 (m) 2s ↓ | L2 (m) 3s ↓ | Avg. ↓ | AP divider ↑ | FPS ↑ | Collision (Avg. %) ↓ | ADE ↓ | FDE ↓ |
+| :-------: | :------------: | :------------: | :------------: | :---: | :------------: | :---: | :------------------: | :---: | :---: |
+| VAD-Tiny   | 0.46           | 0.76           | 1.12           | -    | -              | -     | 0.38                 | 2.848 | 3.294 |
+| VAD-Base   | **0.41**       | **0.70**       | **1.05**       | -    | -              | -     | 0.22                 | 2.089 | 2.917 |
+| **FT-VAD** | 2.02           | 3.24           | 4.38           | -    | -              | -     | **0.00018**          | **1.432** | **2.319** |
 
 
 - Open-loop planning results on [nuScenes](https://github.com/nutonomy/nuscenes-devkit).
