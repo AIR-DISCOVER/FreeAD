@@ -125,12 +125,17 @@ The **FT-VAD** model is available on [Hugging Face](https://huggingface.co/datas
 ## Results
 
 - Open-loop planning results on [FreeWorld](https://huggingface.co/datasets/doraemon6666/FreeWorld/tree/main).
+## Open-loop Results on FreeWorld
+Open-loop Results on FreeWorld: Comparison of VAD-Tiny, VAD-Base, and FT-VAD under the "Divider Only" map modeling strategy. ADE and FDE represent pedestrian motion prediction errors.
+**ADE** and **FDE** represent pedestrian motion prediction errors.  
 
-| **Method**  | **L2 (m) 1s** | **L2 (m) 2s** | **L2 (m) 3s** | **Avg.** | **AP divider** | **FPS** | **Collision (Avg. %)** | **ADE** | **FDE** |
-|:------------|:--------------:|:--------------:|:--------------:|:---------:|:---------------:|:--------:|:-----------------------:|:---------:|:---------:|
-| VAD-Tiny     | 0.891          | 1.600          | 2.449          | 1.647      | 0.000            | **8.7**  | 0.00                     | 2.848      | 3.294      |
-| VAD-Base     | 0.499          | 0.759          | 1.040          | 0.766      | 0.001            | 5.0      | 0.00                     | 2.089      | 2.917      |
-| **FT-VAD**   | **0.421**      | **0.596**      | **0.760**      | **0.592**  | **0.567**         | 5.0      | 0.00                     | **1.432**  | **2.319**  |
+| **Method**  | **L2 (m) 1s ↓** | **L2 (m) 2s ↓** | **L2 (m) 3s ↓** | **Avg. ↓** | **AP divider ↑** | **FPS ↑** | **Collision (Avg. %) ↓** | **ADE ↓** | **FDE ↓** |
+|:------------|:----------------:|:----------------:|:----------------:|:------------:|:------------------:|:-----------:|:---------------------------:|:------------:|:------------:|
+| VAD-Tiny     | 0.891            | 1.600            | 2.449            | 1.647         | 0.000               | **8.7**     | 0.00                         | 2.848         | 3.294         |
+| VAD-Base     | 0.499            | 0.759            | 1.040            | 0.766         | 0.001               | 5.0          | 0.00                         | 2.089         | 2.917         |
+| **FT-VAD**   | **0.421**        | **0.596**        | **0.760**        | **0.592**     | **0.567**            | 5.0          | 0.00                         | **1.432**     | **2.319**     |
+
+> **Note:** AP divider is computed with a threshold of 1.5.
 
 - Open-loop planning results on [nuScenes](https://github.com/nutonomy/nuscenes-devkit).
 
