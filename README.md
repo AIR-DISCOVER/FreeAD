@@ -124,6 +124,17 @@ The **FT-VAD** model is available on [Hugging Face](https://huggingface.co/datas
 
 ## Results
 
+### Map Modeling Results on FreeWorld
+This table presents a comparison between VAD-Tiny and VAD-Base using the Boundary + Divider map modeling strategy on the Full Warehouse map. This map structure closely aligns with the nuScenes map definition, providing a comprehensive evaluation in an open-loop scenario.
+| **Method**  | **L2 (m) 1s ↓** | **L2 (m) 2s ↓** | **L2 (m) 3s ↓** | **L2 (m) Avg. ↓** | **AP Divider ↑** | **AP Boundary ↑** | **FPS** | **Collision (%) ↓** |
+|:------------|:----------------:|:----------------:|:----------------:|:--------------------:|:--------------------:|:--------------------:|:-------:|:---------------------:|
+| VAD-Tiny     | **1.772**         | **3.291**         | **5.008**         | **3.357**             | **0.004**             | 0.000                 | **7.6** | **0.00**              |
+| VAD-Base     | 3.296             | 5.779             | 8.429             | 5.835                 | 0.001                 | 0.000                 | 4.6     | 0.00                   |
+
+**Note:** AP Divider and AP Boundary are computed with a threshold of 1.5.  
+
+
+
 ### Open-loop Results on FreeWorld
 Open-loop Results on FreeWorld: Comparison of VAD-Tiny, VAD-Base, and FT-VAD under the "Divider Only" map modeling strategy. ADE and FDE represent pedestrian motion prediction errors.
 **ADE** and **FDE** represent pedestrian motion prediction errors.  
