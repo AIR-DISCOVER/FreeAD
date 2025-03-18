@@ -7,6 +7,9 @@ To validate the dataset's effectiveness, we fine-tuned the efficient E2E driving
 
 This repository provides the first dataset specifically for E2E robot navigation in unstructured scenarios and offers a benchmark for vision-based E2E navigation technology, supporting the development of logistics and service robots.
 
+## Paper
+Our research paper detailing the FreeAD system, dataset, and experimental results is available on [arXiv]https://arxiv.org/abs/2503.12180.
+
 ## Dataset
 We modified some APIs from the nuScenes dataset to enhance flexibility and support a wider variety of data and map scenarios. The modified code has been localized and named FreeWorld.
 The [FreeWorld Dataset](https://huggingface.co/datasets/doraemon6666/FreeWorld) is available for access.
