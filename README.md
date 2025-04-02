@@ -62,10 +62,10 @@ Open-loop Results on FreeWorld: Comparison of VAD-Tiny, VAD-Base, and FT-VAD und
 
 ## Qualitative Results
 FreeAD results
-![image](qualitative_analysis.png)
+![image](qualitative_analysis.jpg)
 
 VAD results
-![image](VAD_qualitative_results.png)
+![image](VAD_qualitative_results.jpg)
 
  **Note:** We found that the VAD exaggerated the predicted distance of map objects, and the 3D box detection performance was average.
 
