@@ -35,8 +35,31 @@ The [FreeWorld Dataset(Real Part)](https://huggingface.co/datasets/doraemon6666/
 The [FreeAskWorld Dataset(Virtual Part)](https://huggingface.co/datasets/doraemonILoveYou/FreeAskWorld) is available for access.
 
 ## Model
-<!-- The **FT-VAD** model (`FT_VAD_s1e6_s2e3.pth`) was trained for **6 epochs** in stage 1 and **3 epochs** in stage 2, based on the pre-trained [VAD-Base model](https://drive.google.com/file/d/1FLX-4LVm4z-RskghFbxGuYlcYOQmV5bS/view?usp=sharing).  
-The **FT-VAD** model is available on [Hugging Face](https://huggingface.co/doraemon6666/FreeAD). -->
+We conducted fine-tuning experiments on both virtual and real datasets to evaluate our models. Three dataset configurations were considered:
+
+- **Virtual-only (V)**
+- **Real-only (R)**
+- **Combined virtual + real (V+R)**
+
+### LAW (Perception-Free) Model
+
+| Dataset | Fine-Tuning Setup |
+|---------|-----------------|
+| V       | Fine-tuned for 3 epochs on the virtual dataset. |
+| R       | Fine-tuned for 1 epoch on the real dataset. |
+| V+R     | First fine-tuned for 3 epochs on the virtual dataset, followed by 1 epoch on the real dataset. |
+
+### VAD-Base Model
+
+Fine-tuning was performed in two stages:
+
+| Dataset | Stage 1 | Stage 2 |
+|---------|---------|---------|
+| V       | Fine-tuned for 3 epochs on the virtual dataset | Fine-tuned for 1 epoch |
+| R       | Fine-tuned for 1 epoch on the real dataset | Fine-tuned for 1 epoch |
+| V+R     | Fine-tuned for 3 epochs on the virtual dataset and 1 epoch on the real dataset | Fine-tuned for 1 epoch on each dataset |
+
+The models is available on [Hugging Face](https://huggingface.co/doraemonILoveYou/FreeAD). -->
 
 
 ## Results
@@ -57,7 +80,6 @@ This table presents a comparison between VAD-Tiny and VAD-Base using the Boundar
 
 - Open-loop planning results on [FreeWorld(Real Part)](https://huggingface.co/datasets/doraemon6666/FreeWorld). and [FreeAskWorld Dataset(Virtual Part)](https://huggingface.co/datasets/doraemonILoveYou/FreeAskWorld)
 
-Results
 ![image](figs/ExperimentResults.png)
 
 <!-- | **Method**  | **L2 (m) 1s ↓** | **L2 (m) 2s ↓** | **L2 (m) 3s ↓** | **Avg. ↓** | **AP divider ↑** | **FPS ↑** | **Collision (Avg. %) ↓** | **ADE ↓** | **FDE ↓** |
@@ -95,7 +117,7 @@ FreeAD results
 ![image](figs/qualitative_analysis.jpg)
 
 VAD results
-![image](figs/VAD_qualitative_results.png)
+![image](figs/VAD_qualitative_results.jpg)
 
  **Note:** We found that the VAD exaggerated the predicted distance of map objects, and the 3D box detection performance was average.
 
