@@ -59,7 +59,7 @@ Fine-tuning was performed in two stages:
 | R       | Fine-tuned for 1 epoch on the real dataset | Fine-tuned for 1 epoch |
 | V+R     | Fine-tuned for 3 epochs on the virtual dataset and 1 epoch on the real dataset | Fine-tuned for 1 epoch on each dataset |
 
-The models is available on [Hugging Face](https://huggingface.co/doraemonILoveYou/FreeAD). -->
+The models is available on [Hugging Face](https://huggingface.co/doraemonILoveYou/FreeAD).
 
 
 ## Results
@@ -75,8 +75,6 @@ This table presents a comparison between VAD-Tiny and VAD-Base using the Boundar
 
 
 ### Open-loop Results and Sim2Real on FreeWorld
-<!-- Open-loop Results on FreeWorld: Comparison of VAD-Tiny, VAD-Base, and FT-VAD under the "Divider Only" map modeling strategy. ADE and FDE represent pedestrian motion prediction errors.
-**ADE** and **FDE** represent pedestrian motion prediction errors.   -->
 
 - Open-loop planning results on [FreeWorld(Real Part)](https://huggingface.co/datasets/doraemon6666/FreeWorld). and [FreeAskWorld Dataset(Virtual Part)](https://huggingface.co/datasets/doraemonILoveYou/FreeAskWorld)
 
@@ -105,6 +103,9 @@ Help you use FreeAskWorld Dataset with nuScenes-like API.
 
 Help you use FreeWorld Dataset with nuScenes-like API.
 [FreeWorldDataset](https://github.com/doraemonaaaa/FreeWorldDataset)
+
+## LAW-FreeAD Repository
+[LAW-FreeAD](https://github.com/doraemonaaaa/LAW-FreeAD)
 
 ## Getting Started
 - [Installation](docs/install.md)
