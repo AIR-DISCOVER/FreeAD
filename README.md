@@ -122,10 +122,10 @@ VAD results
 
  **Note:** We found that the VAD exaggerated the predicted distance of map objects, and the 3D box detection performance was average.
 
-## Contact
+<!-- ## Contact
 If you have any questions or suggestions about this repo, please feel free to contact us (yuhangpeng65@gmail.com).
 
-<!-- ## Citation
+## Citation
 If you find FreeAD useful in your research or applications, please consider giving us a star &#127775; and citing it by the following BibTeX entry.
 
 ```BibTeX
