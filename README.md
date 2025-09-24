@@ -125,7 +125,7 @@ VAD results
 ## Contact
 If you have any questions or suggestions about this repo, please feel free to contact us (yuhangpeng65@gmail.com).
 
-## Citation
+<!-- ## Citation
 If you find FreeAD useful in your research or applications, please consider giving us a star &#127775; and citing it by the following BibTeX entry.
 
 ```BibTeX
@@ -135,7 +135,7 @@ If you find FreeAD useful in your research or applications, please consider givi
   journal={arXiv preprint arXiv:2503.12180},
   year={2025}
 }
-```
+``` -->
 
 ## License
 All code in this repository is under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
