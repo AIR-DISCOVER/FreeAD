@@ -114,7 +114,7 @@ Help you use FreeWorld Dataset with nuScenes-like API.
 - [Visualization](docs/visualization.md)
 
 ## Qualitative Results
-FreeAD results
+VAD(r) results
 ![image](figs/qualitative_analysis.jpg)
 
 VAD results
