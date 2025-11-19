@@ -32,6 +32,10 @@
     <img src="https://img.shields.io/badge/Related%20Work-FreeAskWorld-blueviolet.svg" alt="FreeAskWorld Project">
   </a>
 
+  <a href="https://github.com/doraemonaaaa/LAW-FreeAD" target="_blank">
+    <img src="https://img.shields.io/badge/Related%20Work-LAW--FreeAD-blue.svg" alt="LAW-FreeAD Project">
+  </a>
+
   <a href="LICENSE" target="_blank">
     <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="Apache License">
   </a>
