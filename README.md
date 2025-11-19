@@ -1,3 +1,43 @@
+<p align="center">
+  <h1 align="center">Bench2FreeAD</h1>
+</p>
+
+<p align="center">
+  <strong>A Benchmark for End-to-end Navigation in Unstructured Robotic Environments</strong>
+</p>
+
+<p align="center">
+  <!-- Badges -->
+  <!-- <a href="$$LINK_TO_YOUR_PAPER_PDF$$" target="_blank">
+    <img src="https://img.shields.io/badge/Paper-AAAI_2026-B31B1B.svg" alt="Paper PDF">
+  </a> -->
+
+  <a href="https://arxiv.org/abs/2503.12180" target="_blank">
+    <img src="https://img.shields.io/badge/arXiv-2503.12180-b31b1b.svg" alt="arXiv">
+  </a>
+
+  <a href="https://huggingface.co/datasets/Astronaut-PENG/FreeWorld" target="_blank">
+    <img src="https://img.shields.io/badge/HuggingFace-FreeWorld-orange.svg" alt="HuggingFace FreeWorld Dataset">
+  </a>
+
+  <a href="https://huggingface.co/datasets/Astronaut-PENG/FreeAskWorld" target="_blank">
+    <img src="https://img.shields.io/badge/HuggingFace-FreeAskWorld-yellow.svg" alt="HuggingFace Dataset">
+  </a>
+
+  <!-- <a href="$$LINK_TO_YOUR_DATASET_PAGE$$" target="_blank">
+    <img src="https://img.shields.io/badge/Dataset-FreeAskWorld-blue.svg" alt="Dataset">
+  </a> -->
+
+  <a href="https://github.com/AIR-DISCOVER/FreeAskWorld" target="_blank">
+    <img src="https://img.shields.io/badge/Related%20Work-FreeAskWorld-blueviolet.svg" alt="FreeAskWorld Project">
+  </a>
+
+  <a href="LICENSE" target="_blank">
+    <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="Apache License">
+  </a>
+</p>
+
+
 ## Introduction
 Most existing end-to-end (E2E) autonomous driving algorithms are designed for **standard vehicles** in structured traffic scenarios.  
 However, these methods rarely explore **robot navigation in unstructured environments** such as:
