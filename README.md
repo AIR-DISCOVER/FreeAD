@@ -3,7 +3,8 @@
 </p>
 
 <p align="center">
-  <strong>A Benchmark for End-to-end Navigation in Unstructured Robotic Environments</strong>
+  <strong>A Sim-to-Real Benchmark for End-to-End
+Navigation in Unstructured Robotic Environments</strong>
 </p>
 
 <p align="center">
